@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "id": "reopened",
+      "question": "How many unique images were reopened under the fixture policy? Return policy_id, release_id and reopened_images. Also return evidence_ids.",
+      "expected": {
+        "reopened_images": 1,
+        "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+        "policy_id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665",
+        "evidence_ids": [
+          "edecbcd7f6c00331a9e9963cb0ddd9f42c55a13afb2da9bb89f451ad571b6556"
+        ]
+      }
+    },
+    {
+      "id": "audit",
+      "question": "For the fixture audit run, return population, sampled, completed, status, estimate, lower_bound and upper_bound. Also return design_id, release_id and policy_id.",
+      "expected": {
+        "population": 9,
+        "sampled": 2,
+        "completed": 2,
+        "status": "complete",
+        "estimate": 0.1111111111111111,
+        "lower_bound": 0.1111111111111111,
+        "upper_bound": 0.8888888888888888,
+        "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+        "policy_id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665",
+        "design_id": "908f14f0725b635088eed877937f7267416640f16025476831667f74e3ebe63c"
+      }
+    },
+    {
+      "id": "excluded",
+      "question": "Which reviewed images were excluded by the fixture policy? Return image_id and evidence_id. Include release_id and policy_id.",
+      "expected": {
+        "image_id": "1",
+        "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+        "policy_id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665",
+        "evidence_id": "256fe60792a6f48bc9137ba3588cdd299980e38d3da75e1436acc49f38f7be63"
+      }
+    }
+  ]
+}

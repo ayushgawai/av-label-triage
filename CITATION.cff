@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: If you use this software, cite this repository and the original datasets and models separately.
+title: AV Label Triage
+version: 0.1.0
+authors:
+  - name: AV Label Triage contributors
+license: Apache-2.0
+type: software

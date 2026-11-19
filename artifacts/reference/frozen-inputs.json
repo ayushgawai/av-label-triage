@@ -1,0 +1,15 @@
+{
+  "note": "Hashes of privately stored frozen model artifacts before scoring; no source images or correction boxes included.",
+  "files": {
+    "queues/run.json": "bcf46210482b7a55d49cf848f638ad88b2b4d230f986f671cb9de4ae4e899dc4",
+    "queues/proposals.json": "2385811f5b348e01d4a15633d9202609b656b203d348d36a92fc3762605531cf",
+    "queues/confidence.json": "f233e24b1aa6b78f7412820f60ce0cb9a5df7546c4984a5c45ba9284477844c4",
+    "queues/similarity.json": "bef316cad93850a6b90523af24098ef1c41dd56044ca210c5da4c7e9346c616d",
+    "queues/fusion.json": "fc7f0c909cb29db4116b54bcb7b3641057ab9a96a79a06d10de43f27f1bb41dd",
+    "tiles-v2/run.json": "6f6cd02add865d661cd934434d6c29149cadde80691ea6ad2fa2c7983545f712",
+    "tiles-v2/queue.json": "81955e19b54b6669ba461a5b0c334d0f77e2fbfa7c86148fad4bca8d91f64864",
+    "tiles-v2/fusion.json": "ce0ed5669c9d73060115bfd040c5f59fcc56a6d08e2f1dca0a9fb669121a64c9"
+  },
+  "selection_sha256": "b40049f4a532125b18eb18eb5d5e688a4fd1c3893124140978dc3fb69a26220c",
+  "scorecard_sha256": "a141b413508133c3d91d6785f372386cf649dc94ecc4f640f85e8a4a5426d173"
+}

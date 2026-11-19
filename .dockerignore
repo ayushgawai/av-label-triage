@@ -1,0 +1,13 @@
+.git
+.venv
+.model-venv
+__pycache__
+*.pyc
+triage-workspace
+artifacts
+node_modules
+viewer/node_modules
+viewer/dist
+*.egg-info
+build
+dist

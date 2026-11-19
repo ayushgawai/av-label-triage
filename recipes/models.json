@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "model": "PekingU/rtdetr_r50vd",
+    "revision": "df939e661d8c52e80608d1ec566561aabd25a4e7",
+    "license": "Apache-2.0"
+  },
+  "embedder": {
+    "model": "facebook/dinov2-small",
+    "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "license": "Apache-2.0"
+  },
+  "environment": {
+    "python": "3.12",
+    "torch": "2.7.1",
+    "transformers": "4.52.4",
+    "pillow": "11.2.1",
+    "safetensors": "0.5.3",
+    "numpy": "2.2.6"
+  },
+  "status": "Frozen for 2026-11-19 local evaluation; report any future configuration changes as new runs.",
+  "inference": {
+    "device": "cpu",
+    "detector_threshold": 0.05,
+    "detector_person_label": 0,
+    "crop_context_fraction": 0.2,
+    "embedding": "L2-normalized CLS",
+    "batch_size": 16,
+    "processor": "slow (use_fast=False)",
+    "fusion_k": 60,
+    "fusion_weights": [
+      1,
+      1
+    ]
+  }
+}

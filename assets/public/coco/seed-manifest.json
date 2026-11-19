@@ -1,0 +1,57 @@
+[
+  {
+    "image_id": 210273,
+    "annotation_id": 570293,
+    "bbox": [
+      1.05,
+      256.02,
+      16.13,
+      56.6
+    ],
+    "label": "seeded removal of original COCO person annotation"
+  },
+  {
+    "image_id": 309391,
+    "annotation_id": 201901,
+    "bbox": [
+      604.28,
+      269.66,
+      22.7,
+      86.89
+    ],
+    "label": "seeded removal of original COCO person annotation"
+  },
+  {
+    "image_id": 142472,
+    "annotation_id": 229528,
+    "bbox": [
+      392.3,
+      363.1,
+      33.71,
+      62.16
+    ],
+    "label": "seeded removal of original COCO person annotation"
+  },
+  {
+    "image_id": 184324,
+    "annotation_id": 1697882,
+    "bbox": [
+      31.17,
+      218.52,
+      52.65,
+      163.72
+    ],
+    "label": "seeded removal of original COCO person annotation"
+  },
+  {
+    "image_id": 301376,
+    "annotation_id": 188580,
+    "bbox": [
+      290.19,
+      366.87,
+      41.13,
+      76.32
+    ],
+    "label": "seeded removal of original COCO person annotation"
+  }
+]

@@ -1,0 +1,14 @@
+# Freeze inputs and queues before providing the reference to this scorer.
+# Set AVTRIAGE_REFERENCE_ROOT to the external cache root.
+labels: ${AVTRIAGE_REFERENCE_ROOT}/kitti/training/label_2
+reference: ${AVTRIAGE_REFERENCE_ROOT}/rechecked/data/validated_gt.csv
+split: ${AVTRIAGE_REFERENCE_ROOT}/rechecked/data/train_val_split.json
+selection: kitti-image-selection.json
+proposals: ${AVTRIAGE_REFERENCE_ROOT}/queues/proposals.json
+queues:
+  confidence: ${AVTRIAGE_REFERENCE_ROOT}/queues/confidence.json
+  similarity: ${AVTRIAGE_REFERENCE_ROOT}/queues/similarity.json
+  fusion: ${AVTRIAGE_REFERENCE_ROOT}/queues/fusion.json
+tile_queues:
+  tile: ${AVTRIAGE_REFERENCE_ROOT}/tiles-v2/queue.json
+  fusion_tiles: ${AVTRIAGE_REFERENCE_ROOT}/tiles-v2/fusion.json

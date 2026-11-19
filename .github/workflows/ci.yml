@@ -1,0 +1,29 @@
+name: CPU checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.lock && pip install --no-deps -e .
+      - run: python -m pytest -q
+      - run: python tools/audit_simulation.py
+      - run: pip wheel --no-deps --wheel-dir /tmp/avtriage-dist .
+      - run: |
+          python -m venv /tmp/avtriage-clean
+          /tmp/avtriage-clean/bin/pip install -r requirements.lock /tmp/avtriage-dist/*.whl
+          cd /tmp
+          /tmp/avtriage-clean/bin/avtriage demo --workspace /tmp/avtriage-fixture
+      - run: npm ci
+        working-directory: viewer
+      - run: npx playwright install --with-deps chromium
+        working-directory: viewer
+      - run: python viewer/build_bundle.py
+      - run: npm run build && npx playwright test
+        working-directory: viewer

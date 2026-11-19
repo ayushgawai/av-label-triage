@@ -1,0 +1,7 @@
+CREATE SCHEMA IF NOT EXISTS avtriage;
+CREATE TABLE IF NOT EXISTS avtriage.review_events (id text primary key, release_id text not null, incident_id text not null, image_id text not null, policy_id text not null, decision text not null, actor_type text not null, supersedes_id text);
+CREATE TABLE IF NOT EXISTS avtriage.audit_results (design_id text primary key, release_id text not null, incident_id text not null, policy_id text not null, population integer not null, sampled integer not null, completed integer not null, status text not null, estimate double precision, lower_bound double precision, upper_bound double precision);
+CREATE OR REPLACE VIEW avtriage.current_reviews AS SELECT e.* FROM avtriage.review_events e WHERE NOT EXISTS (SELECT 1 FROM avtriage.review_events s WHERE s.supersedes_id = e.id);
+CREATE OR REPLACE VIEW avtriage.reopened AS SELECT DISTINCT release_id, policy_id, image_id FROM avtriage.current_reviews WHERE decision='omission';
+CREATE OR REPLACE VIEW avtriage.policy_exclusions AS SELECT id AS evidence_id, release_id, policy_id, incident_id, image_id FROM avtriage.current_reviews WHERE decision='out_of_scope';
+CREATE OR REPLACE VIEW avtriage.reopened_summary AS SELECT release_id, policy_id, count(DISTINCT image_id) AS reopened_images, array_agg(DISTINCT id ORDER BY id) AS evidence_ids FROM avtriage.current_reviews WHERE decision='omission' GROUP BY release_id,policy_id;

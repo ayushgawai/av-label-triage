@@ -1,0 +1,213 @@
+{
+  "random_full_frame": [
+    {
+      "budget": 25,
+      "reviewed_images": 25,
+      "known_images_reached": 0
+    },
+    {
+      "budget": 50,
+      "reviewed_images": 50,
+      "known_images_reached": 0
+    },
+    {
+      "budget": 100,
+      "reviewed_images": 100,
+      "known_images_reached": 1
+    }
+  ],
+  "raw_detector_ceiling_known_boxes": 1,
+  "eligible_proposal_ceiling_known_boxes": 1,
+  "known_boxes": 2,
+  "candidate_methods": {
+    "confidence": {
+      "eligible_images": 133,
+      "known_boxes": 2,
+      "budgets": [
+        {
+          "budget": 25,
+          "reviewed_images": 25,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 50,
+          "reviewed_images": 50,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 100,
+          "reviewed_images": 100,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        }
+      ],
+      "interpretation": "Known reference recovery only; unmatched items are unadjudicated, not confirmed negatives."
+    },
+    "similarity": {
+      "eligible_images": 133,
+      "known_boxes": 2,
+      "budgets": [
+        {
+          "budget": 25,
+          "reviewed_images": 25,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 1,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 50,
+          "reviewed_images": 50,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 100,
+          "reviewed_images": 100,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        }
+      ],
+      "interpretation": "Known reference recovery only; unmatched items are unadjudicated, not confirmed negatives."
+    },
+    "fusion": {
+      "eligible_images": 133,
+      "known_boxes": 2,
+      "budgets": [
+        {
+          "budget": 25,
+          "reviewed_images": 25,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 50,
+          "reviewed_images": 50,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        },
+        {
+          "budget": 100,
+          "reviewed_images": 100,
+          "known_boxes_recovered": 0,
+          "known_images_reached": 2,
+          "known_recovery_per_reviewed_image": 0.0
+        }
+      ],
+      "interpretation": "Known reference recovery only; unmatched items are unadjudicated, not confirmed negatives."
+    }
+  },
+  "note": "Image reach assumes full-frame inspection; box recovery requires IoU >= 0.5. Neither establishes human-confirmed precision.",
+  "tile_search_hints": {
+    "tile": [
+      {
+        "budget": 25,
+        "reviewed_images": 25,
+        "known_images_reached": 0
+      },
+      {
+        "budget": 50,
+        "reviewed_images": 50,
+        "known_images_reached": 1
+      },
+      {
+        "budget": 100,
+        "reviewed_images": 100,
+        "known_images_reached": 1
+      }
+    ],
+    "fusion_tiles": [
+      {
+        "budget": 25,
+        "reviewed_images": 25,
+        "known_images_reached": 2
+      },
+      {
+        "budget": 50,
+        "reviewed_images": 50,
+        "known_images_reached": 2
+      },
+      {
+        "budget": 100,
+        "reviewed_images": 100,
+        "known_images_reached": 2
+      }
+    ]
+  },
+  "paired_drive_bootstrap": {
+    "groups": 44,
+    "replicates": 2000,
+    "seed": 20261119,
+    "comparisons": [
+      {
+        "method": "fusion",
+        "comparator": "confidence",
+        "budget": 25,
+        "observed_difference": 0,
+        "percentile_95": [
+          0,
+          0
+        ]
+      },
+      {
+        "method": "similarity",
+        "comparator": "confidence",
+        "budget": 25,
+        "observed_difference": -1,
+        "percentile_95": [
+          -3,
+          0
+        ]
+      },
+      {
+        "method": "fusion",
+        "comparator": "confidence",
+        "budget": 50,
+        "observed_difference": 0,
+        "percentile_95": [
+          0,
+          0
+        ]
+      },
+      {
+        "method": "similarity",
+        "comparator": "confidence",
+        "budget": 50,
+        "observed_difference": 0,
+        "percentile_95": [
+          0,
+          0
+        ]
+      },
+      {
+        "method": "fusion",
+        "comparator": "confidence",
+        "budget": 100,
+        "observed_difference": 0,
+        "percentile_95": [
+          0,
+          0
+        ]
+      },
+      {
+        "method": "similarity",
+        "comparator": "confidence",
+        "budget": 100,
+        "observed_difference": 0,
+        "percentile_95": [
+          0,
+          0
+        ]
+      }
+    ],
+    "interpretation": "Conditional fixed-queue drive bootstrap of known-image count difference; sparse truth and one seed preclude a general gain claim."
+  }
+}

@@ -1,0 +1,18 @@
+name: Optional real model smoke
+on: workflow_dispatch
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install '.[models]'
+      - run: python -m tools.fetch_models
+        env:
+          HF_HOME: /tmp/avtriage-empty-hf
+      - run: python -m tools.model_smoke assets/public/coco/184324.jpg
+        env:
+          HF_HOME: /tmp/avtriage-empty-hf
+          HF_HUB_OFFLINE: '1'

@@ -1,0 +1,13 @@
+name: KITTI pedestrian original labels
+categories:
+  Car: car
+  Van: van
+  Truck: truck
+  Pedestrian: pedestrian
+  Person_sitting: person_sitting
+  Cyclist: cyclist
+  Tram: tram
+  Misc: misc
+  DontCare: ignore
+prediction_categories:
+  '1': pedestrian

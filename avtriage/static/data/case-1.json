@@ -1,0 +1,609 @@
+{
+  "annotations": [
+    {
+      "bbox": [
+        155.0,
+        40.0,
+        169.0,
+        80.0
+      ],
+      "category": "pedestrian",
+      "id": "a2",
+      "image_id": "2",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7"
+    },
+    {
+      "bbox": [
+        105.0,
+        32.0,
+        121.0,
+        82.0
+      ],
+      "category": "pedestrian",
+      "id": "a5",
+      "image_id": "5",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7"
+    },
+    {
+      "bbox": [
+        192.0,
+        35.0,
+        223.0,
+        88.0
+      ],
+      "category": "cyclist",
+      "id": "a6",
+      "image_id": "6",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7"
+    }
+  ],
+  "audit": null,
+  "images": [
+    {
+      "height": 120,
+      "id": "0",
+      "metadata": {
+        "duplicate_group": "seed-group",
+        "ignore_regions": []
+      },
+      "path": "case-1_media/f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "1",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/ed1d00d220b7e5dd4339ae9fc3de9df950bf7b6cc23312823c338dfa0269277c",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "ed1d00d220b7e5dd4339ae9fc3de9df950bf7b6cc23312823c338dfa0269277c",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "2",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/66d0734e8f41635b3bbdada5cca5e0e50c0a17a577d863cd39c32a73e197ed61",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "66d0734e8f41635b3bbdada5cca5e0e50c0a17a577d863cd39c32a73e197ed61",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "3",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/95f44f17fceb3f46eb1c984a58454b92660609f1bc69429a55c4f643dc1cbcf6",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "95f44f17fceb3f46eb1c984a58454b92660609f1bc69429a55c4f643dc1cbcf6",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "4",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/964d380adbb95c2b15ee76ffd4001a51ae1a15f72bbb0bab3886005bb7939e8e",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "964d380adbb95c2b15ee76ffd4001a51ae1a15f72bbb0bab3886005bb7939e8e",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "5",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/697142c27d16768f02c93cea2973390b39b89ef437c0d114c8f463a335b4992c",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "697142c27d16768f02c93cea2973390b39b89ef437c0d114c8f463a335b4992c",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "6",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": []
+      },
+      "path": "case-1_media/25c3c493cdf6b0a6d9bec30fe58123fd75d9c6ff96c69c3cdbc60720a971398f",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "25c3c493cdf6b0a6d9bec30fe58123fd75d9c6ff96c69c3cdbc60720a971398f",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "7",
+      "metadata": {
+        "duplicate_group": "seed-group",
+        "ignore_regions": []
+      },
+      "path": "case-1_media/f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+      "width": 320
+    },
+    {
+      "height": 120,
+      "id": "8",
+      "metadata": {
+        "duplicate_group": null,
+        "ignore_regions": [
+          [
+            110,
+            25,
+            175,
+            90
+          ]
+        ]
+      },
+      "path": "case-1_media/01df0998fdf62afaaf31892d4fe077321113efa44de0c3b6916990080e472fae",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "sha256": "01df0998fdf62afaaf31892d4fe077321113efa44de0c3b6916990080e472fae",
+      "width": 320
+    }
+  ],
+  "incident": {
+    "bbox": [
+      95.0,
+      30.0,
+      112.0,
+      80.0
+    ],
+    "created_at": "2026-11-19T22:20:18.807107+00:00",
+    "id": "258722e2b13d646e78519959ead449d687d8fa772940e50fcb725db4559e8e7e",
+    "image_id": "1",
+    "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+    "policy_id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665",
+    "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7"
+  },
+  "policy": {
+    "body": {
+      "categories": {
+        "cyclist": "cyclist",
+        "person": "pedestrian"
+      },
+      "name": "pedestrian-v1",
+      "prediction_categories": {
+        "1": "pedestrian"
+      }
+    },
+    "id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665"
+  },
+  "proposals": [
+    {
+      "bbox": [
+        20.0,
+        35.0,
+        38.0,
+        83.0
+      ],
+      "category": "pedestrian",
+      "id": "4d39ba8d3c45c318c27dc10c2ea54800f15f7cfd6c39275bc7e5c444e90e5ed0",
+      "image_id": "0",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.95
+    },
+    {
+      "bbox": [
+        95.0,
+        30.0,
+        112.0,
+        80.0
+      ],
+      "category": "pedestrian",
+      "id": "43096709c0188fa445698154fd53130bc5f6a9ee87e570f1ab16d7223eaddb8e",
+      "image_id": "1",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.9
+    },
+    {
+      "bbox": [
+        155.0,
+        40.0,
+        169.0,
+        80.0
+      ],
+      "category": "pedestrian",
+      "id": "94dd3a9d6ce9f3f88c251e9a8d09eb8251ca0a2d9ffb27237c80a9d89a276b86",
+      "image_id": "2",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.85
+    },
+    {
+      "bbox": [
+        60.0,
+        33.0,
+        77.0,
+        82.0
+      ],
+      "category": "pedestrian",
+      "id": "cea6a0b996f96a133409df2197dd43fd989980c897496f308d24aef91dd3474a",
+      "image_id": "4",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.75
+    },
+    {
+      "bbox": [
+        100.0,
+        32.0,
+        116.0,
+        82.0
+      ],
+      "category": "pedestrian",
+      "id": "024d091ab11c318c38dede4e54b066068da23d7491d3a69f5e99e3cc60f1c8f1",
+      "image_id": "5",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.7
+    },
+    {
+      "bbox": [
+        200.0,
+        35.0,
+        215.0,
+        82.0
+      ],
+      "category": "pedestrian",
+      "id": "fdec9f34843c225e4d690e63c72e3f4f91fa0f8a6198d16d026ed4af59600d84",
+      "image_id": "6",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.65
+    },
+    {
+      "bbox": [
+        20.0,
+        35.0,
+        38.0,
+        83.0
+      ],
+      "category": "pedestrian",
+      "id": "c9c4485f80cc231e01f4b4e77dab71b6b8cdafbb1e470a1f3c7528951ee668d2",
+      "image_id": "7",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.6
+    },
+    {
+      "bbox": [
+        130.0,
+        38.0,
+        146.0,
+        80.0
+      ],
+      "category": "pedestrian",
+      "id": "95f7b40dfb2110d241b5ee01445d97861930c4cc5e88d2d949d770b03c7eebe8",
+      "image_id": "8",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "model_revision": "scripted-fixture-v1",
+      "policy_outcome": "eligible",
+      "reason_codes": [],
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.55
+    }
+  ],
+  "queue": [
+    {
+      "bbox": [
+        20.0,
+        35.0,
+        38.0,
+        83.0
+      ],
+      "bbox_json": "[20.0,35.0,38.0,83.0]",
+      "category": "pedestrian",
+      "confidence_rank": 1,
+      "id": "4d39ba8d3c45c318c27dc10c2ea54800f15f7cfd6c39275bc7e5c444e90e5ed0",
+      "image_id": "0",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "match_iou": 0,
+      "match_status": "unmatched",
+      "matched_annotation_id": null,
+      "model_revision": "scripted-fixture-v1",
+      "overlapping_proposal_ids": [
+        "4d39ba8d3c45c318c27dc10c2ea54800f15f7cfd6c39275bc7e5c444e90e5ed0"
+      ],
+      "policy_outcome": "eligible",
+      "rank_score": 0.01639344262295082,
+      "reason_codes_json": "[]",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.95,
+      "similarity": null,
+      "similarity_rank": null
+    },
+    {
+      "bbox": [
+        60.0,
+        33.0,
+        77.0,
+        82.0
+      ],
+      "bbox_json": "[60.0,33.0,77.0,82.0]",
+      "category": "pedestrian",
+      "confidence_rank": 2,
+      "id": "cea6a0b996f96a133409df2197dd43fd989980c897496f308d24aef91dd3474a",
+      "image_id": "4",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "match_iou": 0,
+      "match_status": "unmatched",
+      "matched_annotation_id": null,
+      "model_revision": "scripted-fixture-v1",
+      "overlapping_proposal_ids": [
+        "cea6a0b996f96a133409df2197dd43fd989980c897496f308d24aef91dd3474a"
+      ],
+      "policy_outcome": "eligible",
+      "rank_score": 0.016129032258064516,
+      "reason_codes_json": "[]",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.75,
+      "similarity": null,
+      "similarity_rank": null
+    },
+    {
+      "bbox": [
+        200.0,
+        35.0,
+        215.0,
+        82.0
+      ],
+      "bbox_json": "[200.0,35.0,215.0,82.0]",
+      "category": "pedestrian",
+      "confidence_rank": 3,
+      "id": "fdec9f34843c225e4d690e63c72e3f4f91fa0f8a6198d16d026ed4af59600d84",
+      "image_id": "6",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "match_iou": 0,
+      "match_status": "cyclist_conflict",
+      "matched_annotation_id": null,
+      "model_revision": "scripted-fixture-v1",
+      "overlapping_proposal_ids": [
+        "fdec9f34843c225e4d690e63c72e3f4f91fa0f8a6198d16d026ed4af59600d84"
+      ],
+      "policy_outcome": "eligible",
+      "rank_score": 0.015873015873015872,
+      "reason_codes_json": "[]",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.65,
+      "similarity": null,
+      "similarity_rank": null
+    },
+    {
+      "bbox": [
+        20.0,
+        35.0,
+        38.0,
+        83.0
+      ],
+      "bbox_json": "[20.0,35.0,38.0,83.0]",
+      "category": "pedestrian",
+      "confidence_rank": 4,
+      "id": "c9c4485f80cc231e01f4b4e77dab71b6b8cdafbb1e470a1f3c7528951ee668d2",
+      "image_id": "7",
+      "index_fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+      "match_iou": 0,
+      "match_status": "unmatched",
+      "matched_annotation_id": null,
+      "model_revision": "scripted-fixture-v1",
+      "overlapping_proposal_ids": [
+        "c9c4485f80cc231e01f4b4e77dab71b6b8cdafbb1e470a1f3c7528951ee668d2"
+      ],
+      "policy_outcome": "eligible",
+      "rank_score": 0.015625,
+      "reason_codes_json": "[]",
+      "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+      "score": 0.6,
+      "similarity": null,
+      "similarity_rank": null
+    }
+  ],
+  "ranking_method": "confidence",
+  "release": {
+    "created_at": "2026-11-19T22:20:18.802108+00:00",
+    "dataset_revision": "fixture-v1",
+    "id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7",
+    "manifest": {
+      "annotations": [
+        {
+          "bbox": [
+            155.0,
+            40.0,
+            169.0,
+            80.0
+          ],
+          "category": "pedestrian",
+          "id": "a2",
+          "image_id": "2"
+        },
+        {
+          "bbox": [
+            105.0,
+            32.0,
+            121.0,
+            82.0
+          ],
+          "category": "pedestrian",
+          "id": "a5",
+          "image_id": "5"
+        },
+        {
+          "bbox": [
+            192.0,
+            35.0,
+            223.0,
+            88.0
+          ],
+          "category": "cyclist",
+          "id": "a6",
+          "image_id": "6"
+        }
+      ],
+      "images": [
+        {
+          "file_name": "0.png",
+          "height": 120,
+          "id": "0",
+          "metadata": {
+            "duplicate_group": "seed-group",
+            "ignore_regions": []
+          },
+          "sha256": "f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+          "width": 320
+        },
+        {
+          "file_name": "1.png",
+          "height": 120,
+          "id": "1",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "ed1d00d220b7e5dd4339ae9fc3de9df950bf7b6cc23312823c338dfa0269277c",
+          "width": 320
+        },
+        {
+          "file_name": "2.png",
+          "height": 120,
+          "id": "2",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "66d0734e8f41635b3bbdada5cca5e0e50c0a17a577d863cd39c32a73e197ed61",
+          "width": 320
+        },
+        {
+          "file_name": "3.png",
+          "height": 120,
+          "id": "3",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "95f44f17fceb3f46eb1c984a58454b92660609f1bc69429a55c4f643dc1cbcf6",
+          "width": 320
+        },
+        {
+          "file_name": "4.png",
+          "height": 120,
+          "id": "4",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "964d380adbb95c2b15ee76ffd4001a51ae1a15f72bbb0bab3886005bb7939e8e",
+          "width": 320
+        },
+        {
+          "file_name": "5.png",
+          "height": 120,
+          "id": "5",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "697142c27d16768f02c93cea2973390b39b89ef437c0d114c8f463a335b4992c",
+          "width": 320
+        },
+        {
+          "file_name": "6.png",
+          "height": 120,
+          "id": "6",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": []
+          },
+          "sha256": "25c3c493cdf6b0a6d9bec30fe58123fd75d9c6ff96c69c3cdbc60720a971398f",
+          "width": 320
+        },
+        {
+          "file_name": "7.png",
+          "height": 120,
+          "id": "7",
+          "metadata": {
+            "duplicate_group": "seed-group",
+            "ignore_regions": []
+          },
+          "sha256": "f96c57775586526c85b6e7c049caafc96a54920a6471d9dadffe1284d6e88dfd",
+          "width": 320
+        },
+        {
+          "file_name": "8.png",
+          "height": 120,
+          "id": "8",
+          "metadata": {
+            "duplicate_group": null,
+            "ignore_regions": [
+              [
+                110,
+                25,
+                175,
+                90
+              ]
+            ]
+          },
+          "sha256": "01df0998fdf62afaaf31892d4fe077321113efa44de0c3b6916990080e472fae",
+          "width": 320
+        }
+      ],
+      "policy": {
+        "categories": {
+          "cyclist": "cyclist",
+          "person": "pedestrian"
+        },
+        "name": "pedestrian-v1",
+        "prediction_categories": {
+          "1": "pedestrian"
+        }
+      },
+      "revision": "fixture-v1"
+    },
+    "policy_id": "23b510282f7279b5d96bf92270a98ffb59345fdd521ebeb01593488127e12665"
+  },
+  "review_events": [],
+  "run_manifest": {
+    "created_at": "2026-11-19T22:20:18.805786+00:00",
+    "fingerprint": "fad8faaf6e66f4905b2cd01dcab950807d40b5a246fc12fbfa5e91be06589c28",
+    "model_revision": "scripted-fixture-v1",
+    "predictions_sha256": "9168c298ce11fa53153dbef342973a63bf3c6306b2b570de51e353c136177c28",
+    "release_id": "cdebd4b133c815ebd12fcc23dbb39cf715487abe1cdeac146a682593fa1602e7"
+  },
+  "schema_version": 1
+}

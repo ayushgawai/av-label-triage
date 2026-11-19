@@ -1,0 +1,181 @@
+version: 0.2.0.dev0
+name: av_label_triage
+datasets:
+- name: reopened_summary
+  source: triage.avtriage.reopened_summary
+  description: Certified distinct reopened image counts grouped by release and policy
+    with review event evidence IDs
+  fields:
+  - name: release_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: release_id
+  - name: policy_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: policy_id
+  - name: reopened_images
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: reopened_images
+  - name: evidence_ids
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: evidence_ids
+- name: current_reviews
+  source: triage.avtriage.current_reviews
+  description: Current unsuperseded review events and their evidence IDs
+  fields:
+  - name: id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: id
+  - name: release_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: release_id
+  - name: incident_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: incident_id
+  - name: image_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: image_id
+  - name: policy_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: policy_id
+  - name: decision
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: decision
+  - name: actor_type
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: actor_type
+  - name: supersedes_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: supersedes_id
+- name: audit_results
+  source: triage.avtriage.audit_results
+  description: Certified finite-population estimates and bounds from the statistical
+    library
+  fields:
+  - name: design_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: design_id
+  - name: release_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: release_id
+  - name: incident_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: incident_id
+  - name: policy_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: policy_id
+  - name: population
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: population
+  - name: sampled
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: sampled
+  - name: completed
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: completed
+  - name: status
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: status
+  - name: estimate
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: estimate
+  - name: lower_bound
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: lower_bound
+  - name: upper_bound
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: upper_bound
+- name: policy_exclusions
+  source: triage.avtriage.policy_exclusions
+  description: Reviewed exclusions with evidence IDs
+  fields:
+  - name: evidence_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: evidence_id
+  - name: release_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: release_id
+  - name: policy_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: policy_id
+  - name: incident_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: incident_id
+  - name: image_id
+    expression:
+      dialects:
+      - dialect: ANSI_SQL
+        expression: image_id
+custom_extensions:
+- vendor_name: NVIDIA_AUTO_ONTOLOGY
+  data: '{"model_name":"av_label_triage","native_document":{"data_layer":{"databases":[{"dialect":"postgresql","id":"b25473f9-a20e-50c7-96da-928965ec56ea","schemas":[{"database_name":"triage","id":"d3b00e94-0eef-513a-bc79-256ca32ede20","name":"avtriage","tables":[{"columns":[{"description":"","id":"de9d8ffb-4957-5ebc-9351-5e849988b104","is_nullable":true,"is_unique":false,"name":"release_id","sample_values":[],"type":""},{"description":"","id":"c3ac928b-fff4-5ae6-8845-3722ff4bdac9","is_nullable":true,"is_unique":false,"name":"policy_id","sample_values":[],"type":""},{"description":"","id":"01d83d74-322f-5685-b355-0bb21328aeac","is_nullable":true,"is_unique":false,"name":"reopened_images","sample_values":[],"type":""},{"description":"","id":"fb3f3f47-e74c-5028-bd16-1d59b3f207a2","is_nullable":true,"is_unique":false,"name":"evidence_ids","sample_values":[],"type":""}],"description":"Read-only
+    vetted AV Label Triage snapshot","id":"ee2f5e11-00be-56a3-9906-f7ac40f84dfa","name":"reopened_summary","pk":[],"type":"VIEW"},{"columns":[{"description":"","id":"ff3fae27-e88b-5b54-9cfb-9e771db73200","is_nullable":true,"is_unique":false,"name":"id","sample_values":[],"type":""},{"description":"","id":"77a074aa-d7c8-5c33-af3a-75e650eef495","is_nullable":true,"is_unique":false,"name":"release_id","sample_values":[],"type":""},{"description":"","id":"802eebd7-47a9-5547-bc90-394c68d394b7","is_nullable":true,"is_unique":false,"name":"incident_id","sample_values":[],"type":""},{"description":"","id":"f4834e9f-0f7a-552a-a91a-f905badbd538","is_nullable":true,"is_unique":false,"name":"image_id","sample_values":[],"type":""},{"description":"","id":"cafbdc32-7a1e-5cf2-bff0-77c497f81a22","is_nullable":true,"is_unique":false,"name":"policy_id","sample_values":[],"type":""},{"description":"","id":"95ec1934-fea4-53ca-982c-e2bd7dc2d76a","is_nullable":true,"is_unique":false,"name":"decision","sample_values":[],"type":""},{"description":"","id":"16c4da89-4f55-5d08-b401-3e9afd7d7cca","is_nullable":true,"is_unique":false,"name":"actor_type","sample_values":[],"type":""},{"description":"","id":"5b4f2a36-154e-5e51-ab38-fd5c2fd19f57","is_nullable":true,"is_unique":false,"name":"supersedes_id","sample_values":[],"type":""}],"description":"Read-only
+    vetted AV Label Triage snapshot","id":"5c745fb3-f575-5f13-92fe-48a4701a742a","name":"current_reviews","pk":[],"type":"VIEW"},{"columns":[{"description":"","id":"e65aa3a9-4f99-54e3-8ec7-bcb473a3a306","is_nullable":true,"is_unique":false,"name":"design_id","sample_values":[],"type":""},{"description":"","id":"9b712b53-6396-5778-93b0-f87df37c94fd","is_nullable":true,"is_unique":false,"name":"release_id","sample_values":[],"type":""},{"description":"","id":"f0ff1390-3e0f-56d1-8a43-f7834c40a91e","is_nullable":true,"is_unique":false,"name":"incident_id","sample_values":[],"type":""},{"description":"","id":"cbf82692-187f-5990-813e-eb03b96b646c","is_nullable":true,"is_unique":false,"name":"policy_id","sample_values":[],"type":""},{"description":"","id":"077b3391-e66a-5da9-b095-16b6b126b14d","is_nullable":true,"is_unique":false,"name":"population","sample_values":[],"type":""},{"description":"","id":"09c55dd3-7bdf-50ea-95ae-b944087f97d7","is_nullable":true,"is_unique":false,"name":"sampled","sample_values":[],"type":""},{"description":"","id":"6a339833-9dc2-5ded-9548-6f62e8410acd","is_nullable":true,"is_unique":false,"name":"completed","sample_values":[],"type":""},{"description":"","id":"bd399e58-962d-50e1-8514-e87f137a356a","is_nullable":true,"is_unique":false,"name":"status","sample_values":[],"type":""},{"description":"","id":"79aa837a-922e-5e44-85cf-920a9c47bbf0","is_nullable":true,"is_unique":false,"name":"estimate","sample_values":[],"type":""},{"description":"","id":"28cdc15c-784d-598c-82bb-3be13436bcf9","is_nullable":true,"is_unique":false,"name":"lower_bound","sample_values":[],"type":""},{"description":"","id":"4119dad8-2de0-5aee-9148-bbc25aec743d","is_nullable":true,"is_unique":false,"name":"upper_bound","sample_values":[],"type":""}],"description":"Read-only
+    vetted AV Label Triage snapshot","id":"fb642c58-0321-5428-b67a-90e50d10af9d","name":"audit_results","pk":[],"type":"VIEW"},{"columns":[{"description":"","id":"117a3854-2c7d-5ea8-b293-485cb9610712","is_nullable":true,"is_unique":false,"name":"evidence_id","sample_values":[],"type":""},{"description":"","id":"2455ae93-4e3e-536a-899a-e9d2e07715eb","is_nullable":true,"is_unique":false,"name":"release_id","sample_values":[],"type":""},{"description":"","id":"e6fc79d4-79ba-5ca4-8e76-d369617d4e68","is_nullable":true,"is_unique":false,"name":"policy_id","sample_values":[],"type":""},{"description":"","id":"f5ccd906-29db-56af-bfa1-1d8816b1bc55","is_nullable":true,"is_unique":false,"name":"incident_id","sample_values":[],"type":""},{"description":"","id":"f9fee9d6-a71a-51fa-9ede-59bb0fde17cd","is_nullable":true,"is_unique":false,"name":"image_id","sample_values":[],"type":""}],"description":"Read-only
+    vetted AV Label Triage snapshot","id":"947d99ea-63cd-5d4c-839d-66b4bc93162e","name":"policy_exclusions","pk":[],"type":"VIEW"}]}]}],"foreign_keys":[],"joins":[{"join_columns":[{"source":"id","target":"evidence_id"}],"source_table_id":"5c745fb3-f575-5f13-92fe-48a4701a742a","target_table_id":"947d99ea-63cd-5d4c-839d-66b4bc93162e"}]},"semantic_layer":{"custom_analyses":[],"semantic_fks":[],"sql_attributes":{"bridge_table":[],"manual":[],"sql":[],"table":[]},"terms":[{"columns_attributes":[{"column_id":"de9d8ffb-4957-5ebc-9351-5e849988b104","description":"","id":"e257ab1b-1b51-54ea-87c5-886da3967a4e","name":"release_id"},{"column_id":"c3ac928b-fff4-5ae6-8845-3722ff4bdac9","description":"","id":"8d63898e-9af9-518a-b575-3b5f5614a78a","name":"policy_id"},{"column_id":"01d83d74-322f-5685-b355-0bb21328aeac","description":"","id":"2e8cf6d6-1779-54da-b3ff-5451419c12f4","name":"reopened_images"},{"column_id":"fb3f3f47-e74c-5028-bd16-1d59b3f207a2","description":"","id":"4f732c9d-2ef3-5795-8863-8b21c136ff85","name":"evidence_ids"}],"description":"Certified
+    distinct reopened image counts grouped by release and policy with review event
+    evidence IDs","id":"95dd3eeb-303a-5d8b-92b9-b6718bc30bbf","name":"reopened_summary","represents":["ee2f5e11-00be-56a3-9906-f7ac40f84dfa"]},{"columns_attributes":[{"column_id":"ff3fae27-e88b-5b54-9cfb-9e771db73200","description":"","id":"6621bd9d-c878-5dba-bb0c-2de1530c7517","name":"id"},{"column_id":"77a074aa-d7c8-5c33-af3a-75e650eef495","description":"","id":"531b7e8d-3d91-5ffd-a090-f88cdc5f5e47","name":"release_id"},{"column_id":"802eebd7-47a9-5547-bc90-394c68d394b7","description":"","id":"df607417-d7d2-5847-92a4-f551da543972","name":"incident_id"},{"column_id":"f4834e9f-0f7a-552a-a91a-f905badbd538","description":"","id":"4baf6ee7-c16a-59b3-8234-17a15195915d","name":"image_id"},{"column_id":"cafbdc32-7a1e-5cf2-bff0-77c497f81a22","description":"","id":"09454205-3edf-526f-9f6f-ac342dc5f96e","name":"policy_id"},{"column_id":"95ec1934-fea4-53ca-982c-e2bd7dc2d76a","description":"","id":"48cb1e2d-2d98-5406-90e3-fd68cc05ebf4","name":"decision"},{"column_id":"16c4da89-4f55-5d08-b401-3e9afd7d7cca","description":"","id":"554e9c66-0425-5b59-b4da-af7722f3ee74","name":"actor_type"},{"column_id":"5b4f2a36-154e-5e51-ab38-fd5c2fd19f57","description":"","id":"00efc3ed-ea6d-50b0-98b4-0327b568fcc0","name":"supersedes_id"}],"description":"Current
+    unsuperseded review events and their evidence IDs","id":"11cd3557-f3ce-52cd-a422-d0852e026199","name":"current_reviews","represents":["5c745fb3-f575-5f13-92fe-48a4701a742a"]},{"columns_attributes":[{"column_id":"e65aa3a9-4f99-54e3-8ec7-bcb473a3a306","description":"","id":"64008d74-1777-5fe2-a5c1-c4e8e9c3ccdf","name":"design_id"},{"column_id":"9b712b53-6396-5778-93b0-f87df37c94fd","description":"","id":"b86162b0-f69a-5185-9f0b-eb86a406b2cf","name":"release_id"},{"column_id":"f0ff1390-3e0f-56d1-8a43-f7834c40a91e","description":"","id":"16d3c47c-528e-5535-830f-6b3caf97f216","name":"incident_id"},{"column_id":"cbf82692-187f-5990-813e-eb03b96b646c","description":"","id":"a45e1fe0-4c0c-5441-aaf4-6ad01a358642","name":"policy_id"},{"column_id":"077b3391-e66a-5da9-b095-16b6b126b14d","description":"","id":"278a8681-4786-5836-9b1b-94195304589e","name":"population"},{"column_id":"09c55dd3-7bdf-50ea-95ae-b944087f97d7","description":"","id":"1c4c344b-135b-5506-a28b-0c8b5dd0de1f","name":"sampled"},{"column_id":"6a339833-9dc2-5ded-9548-6f62e8410acd","description":"","id":"65894eb1-7bf8-541d-a74b-55ccbf21be02","name":"completed"},{"column_id":"bd399e58-962d-50e1-8514-e87f137a356a","description":"","id":"ffbf161d-0c7e-516e-b317-bdfc857de2d1","name":"status"},{"column_id":"79aa837a-922e-5e44-85cf-920a9c47bbf0","description":"","id":"defed630-c3b8-5483-81cc-24f67dc1ce88","name":"estimate"},{"column_id":"28cdc15c-784d-598c-82bb-3be13436bcf9","description":"","id":"928367d2-a635-52b3-a04c-da4126cefed8","name":"lower_bound"},{"column_id":"4119dad8-2de0-5aee-9148-bbc25aec743d","description":"","id":"f7fd9bc0-0853-51f2-a4f0-fd1c2e6f7d91","name":"upper_bound"}],"description":"Certified
+    finite-population estimates and bounds from the statistical library","id":"328f80dc-c654-5d1c-b4c8-4f0f5844bfa3","name":"audit_results","represents":["fb642c58-0321-5428-b67a-90e50d10af9d"]},{"columns_attributes":[{"column_id":"117a3854-2c7d-5ea8-b293-485cb9610712","description":"","id":"f0133a7a-d83a-51f5-9ce4-7524e9e90ef2","name":"evidence_id"},{"column_id":"2455ae93-4e3e-536a-899a-e9d2e07715eb","description":"","id":"31f8dc7e-746d-5f6f-9887-ae4dc160a2dd","name":"release_id"},{"column_id":"e6fc79d4-79ba-5ca4-8e76-d369617d4e68","description":"","id":"39e6a681-ed81-5b79-8b2c-5120083d81ef","name":"policy_id"},{"column_id":"f5ccd906-29db-56af-bfa1-1d8816b1bc55","description":"","id":"9494e50c-39db-5b20-86b4-a7f8cc99ab51","name":"incident_id"},{"column_id":"f9fee9d6-a71a-51fa-9ede-59bb0fde17cd","description":"","id":"f95fe975-d9b8-55ec-be0c-37f6342604e3","name":"image_id"}],"description":"Reviewed
+    exclusions with evidence IDs","id":"5eabba69-e703-5eab-a15c-532b47469fbb","name":"policy_exclusions","represents":["947d99ea-63cd-5d4c-839d-66b4bc93162e"]}]},"zones":[]}}'
+relationships:
+- name: current_reviews_id_to_policy_exclusions
+  from: current_reviews
+  to: policy_exclusions
+  from_columns:
+  - id
+  to_columns:
+  - evidence_id
